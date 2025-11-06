@@ -11,14 +11,14 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-6 order-2 md:order-1">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
               Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Alfred De La Costa</span>
             </h1>
             <p className="text-xl text-gray-600 font-medium">
               Software Engineer and IT Professional
             </p>
             <p className="text-lg text-gray-500 max-w-lg">
-              Crafting elegant digital experiences with modern tech. Passionate about clean code, performance, and pixel-perfect design.
+              I design and build secure, high-performance systems from code to cloud. With deep expertise in full-stack development, enterprise system administration, and defense-grade cybersecurity, I deliver resilient solutions without compromise.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <a

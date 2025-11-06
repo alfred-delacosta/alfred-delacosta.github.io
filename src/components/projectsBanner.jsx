@@ -3,28 +3,28 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
-      title: 'Secure Dashboard Pro',
-      desc: 'A full-stack admin panel built with React, Node.js, and PostgreSQL. Features real-time analytics, role-based access control, and end-to-end encryption. Deployed on AWS with CI/CD via GitHub Actions.',
-      img: '/project-1.jpg',
-      live: 'https://example.com',
-      github: 'https://github.com',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
+      title: 'Photo Metadata Remover',
+      desc: 'A powerful web application designed to strip metadata from images effortlessly using ImageMagick. Built with Node.js, Express.js, React.js, and Material UI, this app combines performance with a modern, user-friendly interface. 🚀 It also includes an automatic cleanup feature to delete processed images from the server after a set time for enhanced security. 🕒',
+      img: '/pmr.png',
+      live: 'https://pmr.ajscreation.com',
+      github: 'https://github.com/alfred-delacosta/photo-metadata-remover',
+      tech: ['Node.js', 'React', 'Express', 'MaterialUI', 'ImageMagick'],
     },
     {
-      title: 'ThreatGuard Monitoring',
-      desc: 'Real-time cybersecurity monitoring tool using ELK Stack and custom agents. Detects anomalies, logs intrusions, and sends encrypted alerts. Reduced response time by 80% in enterprise environments.',
-      img: '/project-2.jpg',
-      live: 'https://example.com',
-      github: 'https://github.com',
-      tech: ['ELK', 'Python', 'Docker', 'SIEM'],
+      title: 'yt-dlp Library',
+      desc: 'A full-stack web application built off of yt-dlp that allows you to download videos and audio from the web and store them in your own library.',
+      img: '/yt-dlp-library.png',
+      live: '#',
+      github: 'https://github.com/alfred-delacosta/yt-dlp-library',
+      tech: ['React', 'Node.js', 'yt-dlp', 'Bootstrap', 'Node.js', 'Express.js', 'MySQL'],
     },
     {
-      title: 'DevSync Platform',
-      desc: 'Internal developer portal with automated workflows, secure code scanning, and compliance checks. Built with Next.js and Prisma. Integrates with Git, Jira, and Slack for seamless DevSecOps.',
-      img: '/project-3.jpg',
-      live: 'https://example.com',
-      github: 'https://github.com',
-      tech: ['Next.js', 'Prisma', 'TypeScript', 'GitHub API'],
+      title: 'Video to MP4',
+      desc: "A web application that uses Handbrake CLI to reduce the size of videos and export them into mp4's. Application is mobile friendly.",
+      img: 'video-to-mp4.png',
+      live: '#',
+      github: 'https://github.com/alfred-delacosta/Video-to-MP4',
+      tech: ['Node.js', 'React', 'Express.js', 'EJS', 'HandBrake', 'SQLite', 'Socket.io', ],
     },
   ];
 
@@ -81,15 +81,17 @@ export default function Projects() {
                   </div>
 
                   <div className={`flex gap-4 ${isEven ? 'md:justify-end' : ''}`}>
-                    <a
-                      href={proj.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-all hover:shadow-md"
-                    >
-                      <ExternalLink size={18} />
-                      Live Demo
-                    </a>
+                    { proj.live !== "#" && (
+                      <a
+                        href={proj.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-all hover:shadow-md"
+                      >
+                        <ExternalLink size={18} />
+                        Live Demo
+                      </a>
+                    )}
                     <a
                       href={proj.github}
                       target="_blank"
