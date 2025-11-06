@@ -15,9 +15,8 @@ export default function Expertise() {
               Full-Stack Developer
             </h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              I build scalable, performant web applications from frontend to backend with modern frameworks like React and Node.js. 
-              My code is clean, maintainable, and follows industry best practices. 
-              I deliver pixel-perfect UIs and robust APIs that power real-world solutions.
+              I build scalable, performant web applications from frontend to backend with modern frameworks like React, Node.js C#, and .NET Core. With over 6 years of software development experience, I have learned to make my code clean, maintainable, and follow industry best practices. 
+              I deliver great UI/UX and robust APIs that power real-world solutions.
             </p>
           </div>
 
@@ -30,9 +29,9 @@ export default function Expertise() {
               IT Professional
             </h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              With over 8 years of experience in system administration and field services, 
-              I've managed enterprise networks, deployed infrastructure, and resolved critical incidents under pressure. 
-              From on-prem servers to cloud environments, I ensure systems are reliable, secure, and efficient.
+              With over 4 years of experience in system administration and field services, 
+              I've managed enterprise systems, deployed infrastructure, and resolved critical incidents under pressure. 
+              From on-prem workstations to classified systems, I ensure systems are reliable, secure, and efficient.
             </p>
           </div>
 

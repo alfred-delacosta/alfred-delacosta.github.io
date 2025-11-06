@@ -37,7 +37,7 @@ export default function Projects() {
             See What I've <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Built</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-            Secure. Scalable. Real-world impact. Each project is battle-tested in production.
+            Each project has been crafted with meticulous care to solve real problems.
           </p>
         </div>
       </section>

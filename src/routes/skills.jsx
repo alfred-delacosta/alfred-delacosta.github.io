@@ -92,8 +92,7 @@ export default function Skills() {
                 <h2 className="text-3xl font-bold text-gray-900">System Administration</h2>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed">
-                4+ years managing enterprise Windows environments, performing senior level field services, 
-                and on-prem data centers maintenace.
+                4+ years managing enterprise Windows environments, Mac, Linux, and Android devices, performing senior level field services.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">

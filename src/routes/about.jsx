@@ -1,5 +1,64 @@
 import { Briefcase, GraduationCap, Award, Calendar, Mail } from 'lucide-react';
 
+const timeline = [
+  {
+    type: 'work',
+    date: '10/2020 — 10/2025',
+    title: 'Computer Scientist',
+    company: 'United States Department of War (Defense)',
+    desc: 'Architected multi-tenant C# .NET Core budget platform across distributed orgs; built responsive DataTables and Bootstrap UIs with HTML/CSS/JS/jQuery, 508-compliant features, and zero-downtime EF Core migrations via Azure DevOps CI/CD.',
+  },
+  {
+    type: 'cert',
+    date: '12/2021',
+    title: 'CISSP Certification',
+    company: 'ISC²',
+    desc: 'Certified Information Systems Security Professional — mastered risk management, cryptography, and security architecture.',
+  },
+  {
+    type: 'work',
+    date: '07/2019 — 10/2020',
+    title: 'Programmer 3',
+    company: 'Integrits Corp',
+    desc: 'Solo-architected Vue.js v1 SPAs with Vuetify/HTML/CSS/JS on SharePoint; leveraged SharePoint REST API for auth, file I/O, and data persistence in DoD CUI environment, delivering tailored purchase-request and unit-homepage tools to HQ leadership.',
+  },
+  {
+    type: 'edu',
+    date: '2018 — 2019',
+    title: 'B.S. Computer Science',
+    company: 'California State University - Monterey Bay',
+    desc: 'Graduated with Distinction',
+  },
+  {
+    type: 'cert',
+    date: '04/2019',
+    title: 'Security+ CE Certification',
+    company: 'CompTIA',
+    desc: 'CompTIA Security+',
+  },
+  {
+    type: 'work',
+    date: '08/2018 — 07/2019',
+    title: 'System Administrator 2',
+    company: 'InuTeq',
+    desc: 'Administered 20+ Windows workstations, 3 Windows servers, and IP cameras at the NASA Armstrong Flight Research Center\' Flight Loads Laboratory; enforced NIST-rooted LGPO policies via PowerShell automation, achieving 100% compliance with CISO audits in regulated environment.',
+  },
+  {
+    type: 'work',
+    date: '05/2016 — 08/2018',
+    title: 'Senior Field Service Technician',
+    company: 'GCS',
+    desc: 'Delivered VIP on-demand IT support for the NASA Armstrong Flight Research Center\'s Center Director, execs, and employees; remotely/desk-side troubleshot Windows/Mac/iOS devices, installed software, performed virus/malware scans and removal, and hardened classified systems.',
+  },
+  {
+    type: 'work',
+    date: '11/2015 — 05/2016',
+    title: 'Deployment/Refresh Technician',
+    company: 'TJ Westlake, LLC',
+    desc: 'Deployed 4+ Mac/PC/Windows Tablet/Linux systems daily with peripherals across multi-site NASA campuses; executed desk-side setup, data migrations, and functionality checks under strict SLAs.',
+  }
+];
+
 export default function About() {
   return (
     <>
@@ -96,62 +155,3 @@ export default function About() {
     </>
   );
 }
-
-const timeline = [
-  {
-    type: 'work',
-    date: '10/2020 — 10/2025',
-    title: 'Computer Scientist',
-    company: 'United States Department of War (Defense)',
-    desc: 'Architected multi-tenant C# .NET Core budget platform across distributed orgs; built responsive DataTables and Bootstrap UIs with HTML/CSS/JS/jQuery, 508-compliant features, and zero-downtime EF Core migrations via Azure DevOps CI/CD.',
-  },
-  {
-    type: 'cert',
-    date: '12/2021',
-    title: 'CISSP Certification',
-    company: 'ISC²',
-    desc: 'Certified Information Systems Security Professional — mastered risk management, cryptography, and security architecture.',
-  },
-  {
-    type: 'work',
-    date: '07/2019 — 10/2020',
-    title: 'Programmer 3',
-    company: 'Integrits Corp',
-    desc: 'Solo-architected Vue.js v1 SPAs with Vuetify/HTML/CSS/JS on SharePoint; leveraged SharePoint REST API for auth, file I/O, and data persistence in DoD CUI environment, delivering tailored purchase-request and unit-homepage tools to HQ leadership.',
-  },
-  {
-    type: 'edu',
-    date: '2018 — 2019',
-    title: 'B.S. Computer Science',
-    company: 'California State University - Monterey Bay',
-    desc: 'Graduated with Distinction',
-  },
-  {
-    type: 'cert',
-    date: '04/2019',
-    title: 'Security+ CE Certification',
-    company: 'CompTIA',
-    desc: 'CompTIA Security+',
-  },
-  {
-    type: 'work',
-    date: '08/2018 — 07/2019',
-    title: 'System Administrator 2',
-    company: 'InuTeq',
-    desc: 'Administered 20+ Windows workstations, 3 Windows servers, and IP cameras at the NASA Armstrong Flight Research Center\' Flight Loads Laboratory; enforced NIST-rooted LGPO policies via PowerShell automation, achieving 100% compliance with CISO audits in regulated environment.',
-  },
-  {
-    type: 'work',
-    date: '05/2016 — 08/2018',
-    title: 'Senior Field Service Technician',
-    company: 'GCS',
-    desc: 'Delivered VIP on-demand IT support for the NASA Armstrong Flight Research Center\'s Center Director, execs, and employees; remotely/desk-side troubleshot Windows/Mac/iOS devices, installed software, performed virus/malware scans and removal, and hardened classified systems.',
-  },
-  {
-    type: 'work',
-    date: '11/2015 — 05/2016',
-    title: 'Deployment/Refresh Technician',
-    company: 'TJ Westlake, LLC',
-    desc: 'Deployed 4+ Mac/PC/Windows Tablet/Linux systems daily with peripherals across multi-site NASA campuses; executed desk-side setup, data migrations, and functionality checks under strict SLAs.',
-  }
-];
