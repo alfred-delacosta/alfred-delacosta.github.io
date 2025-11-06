@@ -1,4 +1,5 @@
 import { ExternalLink, Github, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const projects = [
@@ -68,9 +69,9 @@ export default function Projects() {
 
                   {/* Tech Tags */}
                   <div className="flex flex-wrap gap-2">
-                    {proj.tech.map((tag) => (
+                    {proj.tech.map((tag, id) => (
                       <span
-                        key={tag}
+                        key={id}
                         className="px-3 py-1 text-xs font-medium text-blue-700 bg-blue-50 rounded-full"
                       >
                         {tag}
@@ -117,13 +118,13 @@ export default function Projects() {
           <p className="text-xl mb-8 opacity-90">
             Let's build your next secure, high-impact solution — together.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 text-lg font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1"
           >
             <Mail size={24} />
             Hire Me
-          </a>
+          </Link>
         </div>
       </section>
     </>

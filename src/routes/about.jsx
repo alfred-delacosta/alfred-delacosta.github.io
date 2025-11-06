@@ -1,4 +1,5 @@
 import { Briefcase, GraduationCap, Award, Calendar, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const timeline = [
   {
@@ -143,13 +144,13 @@ export default function About() {
           <p className="text-xl mb-8 opacity-90">
             Let's bring your vision to life with secure, scalable, and high-performance solutions.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 text-lg font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1"
           >
             <Mail size={24} />
             Get in Touch
-          </a>
+          </Link>
         </div>
       </section>
     </>

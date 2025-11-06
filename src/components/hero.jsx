@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -21,18 +22,18 @@ export default function Hero() {
               I design and build secure, high-performance systems from code to cloud. With deep expertise in full-stack development, enterprise system administration, and defense-grade cybersecurity, I deliver resilient solutions without compromise.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-all hover:shadow-lg transform hover:-translate-y-0.5"
               >
                 View Projects
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all"
               >
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </div>
 

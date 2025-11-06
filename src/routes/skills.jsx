@@ -1,5 +1,6 @@
 import { Server, Database, Code2, Shield, Lock, Cloud, Mail } from 'lucide-react';
 import { SiNodedotjs, SiExpress, SiReact, SiMysql } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 export default function Skills() {
   return (
@@ -144,13 +145,13 @@ export default function Skills() {
             Let's talk about how I can bring full-stack expertise, system reliability, 
             and enterprise-grade security to your team.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 text-lg font-semibold rounded-xl hover:bg-gray-100 transition-all hover:shadow-xl transform hover:-translate-y-1"
           >
             <Mail size={24} />
             Contact Me
-          </a>
+          </Link>
         </div>
       </section>
     </>

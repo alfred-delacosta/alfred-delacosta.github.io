@@ -70,9 +70,9 @@ export default function Projects() {
                   </p>
 
                   <div className={`flex flex-wrap gap-2 ${isEven ? 'md:justify-end' : ''}`}>
-                    {proj.tech.map((tag) => (
+                    {proj.tech.map((tag, id) => (
                       <span
-                        key={tag}
+                        key={id}
                         className="px-3 py-1 text-sm font-medium text-blue-700 bg-blue-50 rounded-full"
                       >
                         {tag}
