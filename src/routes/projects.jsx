@@ -20,6 +20,14 @@ export default function Projects() {
       tech: ['React', 'Node.js', 'yt-dlp', 'Bootstrap', 'Node.js', 'Express.js', 'MySQL'],
     },
     {
+      title: 'STARBASE Edwards 501(c)(3) - Website',
+      desc: 'The website I built for the Non-Profit STARBASE Edwards Program. This website is no longer being used and is not official. The project was built with Vue.js v1.0 and Vuetify.',
+      img: '/starbase-edwards.png',
+      live: 'https://starbase-edwards-dev.netlify.app/#/',
+      github: '#',
+      tech: ['Vue.js (v1.0)', 'Vuetify', 'Webpack'],
+    },
+    {
       title: 'Video to MP4',
       desc: "A web application that uses Handbrake CLI to reduce the size of videos and export them into mp4's. Application is mobile friendly.",
       img: 'video-to-mp4.png',
@@ -92,15 +100,17 @@ export default function Projects() {
                         Live
                       </a>
                     )}
-                    <a
-                      href={proj.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all"
-                    >
-                      <Github size={16} />
-                      Code
-                    </a>
+                    { proj.github !== "#" && (
+                      <a
+                        href={proj.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all"
+                      >
+                        <Github size={18} />
+                        Source Code
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
