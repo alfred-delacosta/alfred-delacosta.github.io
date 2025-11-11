@@ -3,6 +3,14 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
+      title: 'VIN Lookup Tool',
+      desc: 'A streamlined web application for instant vehicle identification and detailed specifications via VIN decoding. Powered by the official NHTSA API, it delivers accurate make, model, year, and safety data in real time. Built with TypeScript, Vite, React, and custom CSS for optimal performance, type safety, and a polished user interface.',
+      img: '/vin-lookup.png',
+      live: 'https://vin-lookup.ajscreation.com',
+      github: 'https://github.com/alfred-delacosta/web-vin-lookup',
+      tech: ['TypeScript', 'Vite', 'React', 'Custom CSS', 'NHTSA API', 'JavaScript', 'Responsive Design', 'Mobile-friendly'],
+    },
+    {
       title: 'Photo Metadata Remover',
       desc: 'A powerful web application designed to strip metadata from images effortlessly using ImageMagick. Built with Node.js, Express.js, React.js, and Material UI, this app combines performance with a modern, user-friendly interface. 🚀 It also includes an automatic cleanup feature to delete processed images from the server after a set time for enhanced security. 🕒',
       img: '/pmr.png',
